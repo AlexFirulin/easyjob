@@ -20,7 +20,7 @@
           <li class="nav-item" @click="showVac"><a class="nav-link"><span class="nav-text">Вакансіі</span></a></li>
           <li class="nav-item"><a href="" class="nav-link"><span class="nav-text">Послуги</span></a></li>
           <li class="nav-item"><a href="" class="nav-link"><span class="nav-text">Про компанію</span></a></li>
-          <li class="nav-item"><a href="/news" class="nav-link"><span class="nav-text">Новини</span></a></li>
+          <li class="nav-item" @click="goNews"><a class="nav-link"><span class="nav-text">Новини</span></a></li>
           <li class="nav-item" @click.prevent="showContacts"><a href="/" class="nav-link"><span class="nav-text">Контакти</span></a></li>
         </ul>
       </nav>
@@ -67,10 +67,12 @@
 
 <script setup>
 import WorkList from '@/views/WorkList.vue';
-import { ref } from 'vue';
+import { ref  } from 'vue';
+import { useRouter } from 'vue-router'
 
 const showJob = ref(false);
 const showContact = ref(false);
+
 
 const showVac = () => {
   showJob.value = !showJob.value;
@@ -79,6 +81,10 @@ const showVac = () => {
 const showContacts = () => {
   showContact.value = !showContact.value;
 };
+const router = useRouter()
+const goNews=()=>{
+  router.push('/news')
+}
 </script>
 
 <style scoped>

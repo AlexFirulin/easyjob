@@ -34,12 +34,13 @@ const openPopup = (work) => {
   selectedWork.value = work;
 };
 
-const getImgUrl = () => `${getImg}/worker.jpg`;
+const getImgUrl = () => `${getImg} + '/worker.jpg'`;
 
 const additionalInfo = (work) => {
   const { vacancy_location, vacancy_brutto, work_hours, vacancy_male } = work;
   return [vacancy_location, vacancy_brutto, work_hours, vacancy_male, 'За повною інформацією звертайтесь до менеджера'];
 };
+
 
 // const closePopup = () => {
 //   selectedWork.value = null;
