@@ -20,7 +20,7 @@
           <li class="nav-item" @click="showVac"><a class="nav-link"><span class="nav-text">Вакансіі</span></a></li>
           <li class="nav-item"><a href="" class="nav-link"><span class="nav-text">Послуги</span></a></li>
           <li class="nav-item"><a href="" class="nav-link"><span class="nav-text">Про компанію</span></a></li>
-          <li class="nav-item"><router-link to="/news"><span class="nav-text">Новини</span></router-link></li>
+          <li class="nav-item"><a href="/news" class="nav-link"><span class="nav-text">Новини</span></a></li>
           <li class="nav-item" @click.prevent="showContacts"><a href="/" class="nav-link"><span class="nav-text">Контакти</span></a></li>
         </ul>
       </nav>
