@@ -2,7 +2,7 @@
   <div class="work-list">
     <div class="work-card" v-for="work in works" :key="work.id" @click="openPopup(work)">
       <div class="work-img-card">
-        <img load="lazy" :src="getImgUrl(work)" alt="работа в германии" class="work-img">
+        <img load="lazy" :src="getImgUrl()" alt="работа в германии" class="work-img">
       </div>
       <div class="work-card-body">
         <div class="job-info-top">
